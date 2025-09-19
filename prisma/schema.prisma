@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model City {
+  id Int @id @default(autoincrement()) @db.UnsignedSmallInt @map("city_id")
+  city String @db.VarChar(50)
+  countryId Int @map("country_id") @db.UnsignedSmallInt
+  lastUpdate DateTime @default(now()) @db.Timestamp(0) @map("last_update")
+  addresses Address[]
+  country Country @relation(fields: [countryId], references: [id], map: "fk_city_country")
+  @@index([id], map: "idx_fk_country_id")
+  @@map("city")
+}
+model Country {
+  id Int @id @default(autoincrement()) @db.UnsignedSmallInt @map("country_id")
+  country String @db.VarChar(50)
+  lastUpdate DateTime @default(now()) @map("last_update") @db.Timestamp(0)
+  cities City[]
+  @@map("country")
+}
+model Address {
+  id Int @id @default(autoincrement()) @map("address_id") @db.UnsignedSmallInt
+  address String @db.VarChar(50)
+  address2 String? @db.VarChar(50)
+  district String @db.VarChar(20)
+  cityId Int @map("city_id") @db.UnsignedSmallInt
+  postalCode String? @db.VarChar(10) @map("postal_code")
+  phone String @db.VarChar(20)
+  lastUpdate DateTime @default(now()) @map("last_update") @db.Timestamp(0)
+  city City @relation(fields: [cityId], references: [id], map: "fk_address_city")
+  customers Customer[]
+
+  @@index([id], map: "idx_fk_city_id")
+  @@map("address")
+}
+model Customer {
+  id Int @id @default(autoincrement()) @map("customer_id") @db.UnsignedSmallInt
+  firstName String @map("first_name") @db.VarChar(45)
+  lastName String @map("last_name") @db.VarChar(45)
+  email String? @db.VarChar(50)
+  addressId Int @map("address_id") @db.UnsignedSmallInt
+  active Boolean @default(true)
+  createDate DateTime @map("create_date") @db.DateTime(0)
+  lastUpdate DateTime? @default(now()) @map("last_update") @db.Timestamp(0)
+  address Address @relation(fields: [addressId], references: [id], map: "fk_customer_address")
+
+  @@index([id], map: "idx_fk_address_id")
+  @@index([lastName], map: "idx_last_name")
+  @@map("customer")
+}
+
