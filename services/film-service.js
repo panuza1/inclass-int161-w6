@@ -1,7 +1,8 @@
+const { filters } = require('pug');
 const repo = require('../repositories/film-repository');
 module.exports = {
-    getAll : async function (includeActor = false, pageRequest = {}) {
-        const results = await repo.findAll(includeActor, pageRequest);
+    getAll : async function (includeActor = false, pageRequest = {}, filters = {}) {
+        const results = await repo.findAll(includeActor, pageRequest, filters);
         return results
     },
     getById : async function (id) {

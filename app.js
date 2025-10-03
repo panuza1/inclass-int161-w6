@@ -23,5 +23,4 @@ app.use('/countries', countryRouter);
 app.use('/customer', customerRouter);
 app.use('/films', filmRouter)
 
-app.listen(3000)
 module.exports = app;

@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ea292aa-4256-4845-b0b0-99483c18c1fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/src/app/components/Pagination.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/src/app/films/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/film-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/film-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/postcss.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/postcss.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/src/app/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +40,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.test-film.js.executor": "Run",
+    "Node.js.www.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
@@ -44,6 +54,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -52,6 +63,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\WebstormProjects\inclass-int161-w6\test" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759424307100</updated>
-      <workItem from="1759424308207" duration="720000" />
+      <workItem from="1759424308207" duration="3779000" />
     </task>
     <servers />
   </component>
