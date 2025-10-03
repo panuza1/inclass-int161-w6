@@ -1,17 +1,21 @@
 const repo = require('../repositories/country-repository');
+const errResp = require('../error/error-response');
+
 module.exports = {
     getAll: async function () {
-        const array = await repo.findAll();
-        return array;
+        return await repo.findAll();
     },
     getById: async function (id, includeCity = false) {
         const uniqueOne = await repo.findById(id, includeCity);
-        if (!uniqueOne) {
-            const err = new Error(`Country not found for ID ${id}`);
-            err.code = 'NOT_FOUND';
-            err.status = 404;
-            throw err;
-        }
-        return uniqueOne;
+        if (!uniqueOne) throw errResp.notFoundError(id, 'Country');
+        return uniqueOne ;
     },
+    update: async function (id, data) {
+        await this.getById(id);
+        const sameNamaCountry = await repo.findByCountryName(data.country);
+        if (sameNamaCountry && sameNamaCountry.id !== id) {
+            throw errResp.duplicateItem(data.country, 'Country')
+        }
+        return await repo.update(id, data);
+    }
 }

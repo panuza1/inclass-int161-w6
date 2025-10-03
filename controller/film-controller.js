@@ -28,8 +28,8 @@ const SimpleFilmDto = require('../dtos/simple-film-dto');
             res.status(e.status||500).json({code: e.code, message: e.message, status: e.status});
         }
    },
-   get: async function (req, pes) {
-    const id = Number(req.paramas.id);
+   get: async function (req, res) {
+    const id = Number(req.params.id);
     try {
         const uniqueOne = await service.getById(id);
         res.json(new FilmDetailDto(uniqueOne));
