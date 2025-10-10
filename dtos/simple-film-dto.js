@@ -1,9 +1,9 @@
 class SimpleFilmDto {
     constructor(film = {}) {
-        const {id, title, release_year, rating, film_actor, film_category} = film;
+        const {id, title, releaseYear, rating, film_actor, film_category} = film;
         this.id = id ?? null;
         this.title = title ?? '-';
-        this.release_year = release_year ?? '-';
+        this.releaseYear = releaseYear ?? '-';
         this.rating = rating ?? '-';
         if (film_actor) {
             this.actor = film_actor.map(actor => {

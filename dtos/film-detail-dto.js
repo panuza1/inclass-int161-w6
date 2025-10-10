@@ -1,9 +1,9 @@
 class FilmDetailDto {
     constructor(film = {}) {
-        const {id, title, description, length, release_year, special_features,rating, film_actor, film_category} = film;
+        const {id, title, description, length, releaseYear, special_features,rating, film_actor, film_category} = film;
         this.id = id ?? null;
         this.title = title ?? '-';
-        this.releaseYear = release_year ?? '-';
+        this.releaseYear = releaseYear ?? '-';
         this.rating = rating ?? '-';
         this.description = description ?? '-';
         this.length = length ?? '-';

@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ea292aa-4256-4845-b0b0-99483c18c1fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/middlewares/film-validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validators/film-validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validators/validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/film-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/film-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtos/film-detail-dto.js" beforeDir="false" afterPath="$PROJECT_DIR$/dtos/film-detail-dto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtos/simple-film-dto.js" beforeDir="false" afterPath="$PROJECT_DIR$/dtos/simple-film-dto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repositories/film-repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/film-repository.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/film-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/film-route.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/film-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/film-service.js" afterDir="false" />
@@ -24,6 +22,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1759424307100</updated>
       <workItem from="1759424308207" duration="3779000" />
-      <workItem from="1760053148487" duration="1898000" />
+      <workItem from="1760053148487" duration="5955000" />
     </task>
     <servers />
   </component>

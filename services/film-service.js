@@ -1,5 +1,7 @@
 const { filters } = require('pug');
 const repo = require('../repositories/film-repository');
+const errResp = require('../error/error-response')
+
 module.exports = {
     getAll : async function (includeActor = false, pageRequest = {}, filters = {}) {
         const results = await repo.findAll(includeActor, pageRequest, filters);
@@ -30,5 +32,6 @@ module.exports = {
         }
         return await repo.create(data);
     },
+
 
 }

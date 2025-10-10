@@ -1,7 +1,6 @@
 const service = require('../services/film-service')
 const FilmDetailDto = require('../dtos/film-detail-dto');
 const SimpleFilmDto = require('../dtos/simple-film-dto');
-
  module.exports = {
     list: async function (req, res) {
         try {
@@ -50,4 +49,15 @@ const SimpleFilmDto = require('../dtos/simple-film-dto');
         const film = await service.create(data);
         res.json(film);
      },
+     delete: async function (req, res) {
+         const id = parseInt(req.params.id); // make sure id is the correct type
+         try {
+             const deletedRecord = await prisma.film.delete({
+                 where: { id: id }
+             });
+             res.json({ message: "Deleted successfully", deletedRecord });
+         } catch (error) {
+             res.status(500).json({ message: "Delete failed", error: error.message });
+         }
+     }
 }

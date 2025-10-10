@@ -91,7 +91,7 @@ model Film {
   id                                           Int            @id @default(autoincrement()) @map("film_id") @db.UnsignedSmallInt
   title                                        String         @db.VarChar(128)
   description                                  String?        @db.Text
-  release_year                                 Int?           @db.Year
+  release_year                                 Int?           @map("release_year") @db.Year
   language_id                                  Int            @db.UnsignedTinyInt
   original_language_id                         Int?           @db.UnsignedTinyInt
   rental_duration                              Int            @default(3) @db.UnsignedTinyInt
