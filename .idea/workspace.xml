@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ea292aa-4256-4845-b0b0-99483c18c1fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/src/app/components/Pagination.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/src/app/films/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/film-validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/24d23108-13cf-48bf-9a74-1f9304368e86/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/film-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/film-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/postcss.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/postcss.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/sakila-rental-video-fe/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/sakila-rental-video-fe/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/film-repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/film-repository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/film-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/film-route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/film-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/film-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +28,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="33WEDIJPsOQE1cvDdpgxTWlOR2M" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,7 +44,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.test-film.js.executor": "Run",
-    "Node.js.www.executor": "Debug",
+    "Node.js.www.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -68,6 +71,11 @@
       <recent name="C:\Users\Acer\WebstormProjects\inclass-int161-w6\test" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="www" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1759424307100</updated>
       <workItem from="1759424308207" duration="3779000" />
+      <workItem from="1760053148487" duration="1898000" />
     </task>
     <servers />
   </component>

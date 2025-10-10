@@ -15,4 +15,20 @@ module.exports = {
         }
         return uniqueOne
     },
+    update: async function (id, data) {
+        await this.getById(id);
+        const sameTitleFilm = await repo.findByTitle(data.title);
+        if (sameTitleFilm && sameTitleFilm.id !== id) {
+            throw errResp.duplicateItem(data.title, 'Film');
+        }
+        return await repo.update(id, data);
+    },
+    create: async function (data) {
+        const sameTitleFilm = await repo.findByTitle(data.title);
+        if (sameTitleFilm) {
+            throw errResp.duplicateItem(data.title, 'Film');
+        }
+        return await repo.create(data);
+    },
+
 }

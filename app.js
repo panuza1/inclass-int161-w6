@@ -43,8 +43,10 @@ app.use(function (err, req, res, next) {
         status: status,
         message: err.message,
         resource: req.originalUrl,
-        timestamp: new Date().toLocaleString()
+        timestamp: new Date().toLocaleString(),
+        ...(err.errors && {errors: err.errors}),
     });
 });
+
 
 module.exports = app;

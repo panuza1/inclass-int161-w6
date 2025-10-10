@@ -26,7 +26,7 @@ module.exports = {
             pageSize: pageSize,
             totalItems: totalItems,
             totalPage: Math.ceil(totalItems / pageSize)
-        }
+        }      
     },
 
     findById: async function (fid) {
@@ -36,6 +36,23 @@ module.exports = {
         film_actor: { include: { actor: true } },
         film_category: { include: { category: true } },
       },
+        update: async function (fid, data) {
+            ({actors, ...film} = data);
+            return await prisma.film.update({
+                where: {id: fid},
+                data: film,
+            });
+        },
+        create: async function (data) {
+            return await prisma.film.create({
+                data: data,
+            });
+        },
+        findByTitle: async function (title) {
+            return await prisma.film.findFirst({
+                where: {title: title}
+            });
+        }
     });
   },
 };
