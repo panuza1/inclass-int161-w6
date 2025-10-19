@@ -6,5 +6,10 @@ async function getAllFilms() {
     console.log(films)
 }
 
-getAllFilms()   
 
+async function getAllresult() {
+    const result = await prisma.customer.findMany()
+    console.log(result)
+}
+
+getAllresult() 

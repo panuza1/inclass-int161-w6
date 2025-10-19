@@ -1,6 +1,6 @@
 const FilmDetailDto = require("../dtos/film-detail-dto");
 const { PrismaClient } = require("../generated/prisma");
-const prisma = new PrismaClient();
+const prisma = new PrismaClient();  
 
 module.exports = {
     findAll: async function (

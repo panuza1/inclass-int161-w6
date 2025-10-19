@@ -17,6 +17,6 @@ module.exports = {
         const id = Number(req.params.id)
         const country = await service.update(id, data)
         res.json(country)
-    }
-}
+    }  
+} 
 

@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ea292aa-4256-4845-b0b0-99483c18c1fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/validators/film-validator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validators/validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/country-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/country-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/customer-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/customer-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/film-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/film-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtos/film-detail-dto.js" beforeDir="false" afterPath="$PROJECT_DIR$/dtos/film-detail-dto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtos/simple-film-dto.js" beforeDir="false" afterPath="$PROJECT_DIR$/dtos/simple-film-dto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/customer-repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/customer-repository.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repositories/film-repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/film-repository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/customer-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/customer-route.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/film-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/film-route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/customer-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/film-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/film-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/String-Filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/String-Filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test-film.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/test-film.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/Acer/WebstormProjects/inclass-int161-w6",
@@ -61,6 +62,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
@@ -96,7 +98,12 @@
       <option name="presentableId" value="Default" />
       <updated>1759424307100</updated>
       <workItem from="1759424308207" duration="3779000" />
-      <workItem from="1760053148487" duration="5955000" />
+      <workItem from="1760053148487" duration="7814000" />
+      <workItem from="1760789165134" duration="234000" />
+      <workItem from="1760884883075" duration="262000" />
+      <workItem from="1760885171695" duration="341000" />
+      <workItem from="1760885670287" duration="152000" />
+      <workItem from="1760885834199" duration="315000" />
     </task>
     <servers />
   </component>

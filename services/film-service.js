@@ -32,6 +32,9 @@ module.exports = {
         }
         return await repo.create(data);
     },
-
+    // delete: async function (id) {
+    //     await this.getById(id);
+    //     return await repo.delete(id)
+    // }
 
 }

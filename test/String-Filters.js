@@ -15,4 +15,4 @@ async function getAllFilms(filter) {
     console.log(films)
 }
 
-getAllFilms('dino')
+getAllFilms('dino') 

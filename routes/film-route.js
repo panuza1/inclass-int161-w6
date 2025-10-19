@@ -8,8 +8,10 @@ const {filmSchema, filmQuerySchema} = require('../validators/film-validator')
 router.get('/', validate(filmQuerySchema, 'query'), controller.list);
 router.get('/:id', controller.get) ;
 router.put('/:id', controller.update);
-router.delete('/:id', controller.delete);
+// router.delete('/:id', controller.delete);
 router.post('/',validate(filmSchema, 'body'), controller.create);
 // router.post('/', validateFilm, controller.create);
 
 module.exports = router;
+
+
